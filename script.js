@@ -1,16 +1,4 @@
 
-  const firebaseConfig = {
-    apiKey: "AIzaSyCKBLqHCwiM3qAbkozWmKQL3pUdXKzR8KQ",
-    authDomain: "smarthomebyovanindagusdi.firebaseapp.com",
-    databaseURL: "https://smarthomebyovanindagusdi-default-rtdb.asia-southeast1.firebasedatabase.app",
-    projectId: "smarthomebyovanindagusdi",
-    storageBucket: "smarthomebyovanindagusdi.firebasestorage.app",
-    messagingSenderId: "416650342472",
-    appId: "1:416650342472:web:bf7df8e6045ad1cf7de87d",
-    measurementId: "G-T9KKEQEMER"
-  };
-
-
 // ========== LAMPU ==========
 function toggleLamp(id) {
     const img = document.getElementById(`lamp${id}_img`);
@@ -158,6 +146,7 @@ function updatePZEMValues(energy, power, freq, pf) {
     document.getElementById("freq-text").innerText = freq.toFixed(1) + " Hz";
     document.getElementById("pf-text").innerText = pf.toFixed(2); // power factor biasanya 0..1
 }
+
 
 
 
